@@ -97,7 +97,7 @@ def evaluate(path: Path) -> dict:
         "average_elapsed_seconds": total_seconds / len(records),
     }
     output = path.with_name(path.stem + ".summary.json")
-    output.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+    output.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8", newline="\n")
     return summary
 
 

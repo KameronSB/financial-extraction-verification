@@ -32,7 +32,7 @@ def api_error_message(error: openai.APIError) -> str:
 
 def save_run(path: Path, result: dict) -> None:
     temporary = path.with_suffix(".tmp")
-    temporary.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    temporary.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8", newline="\n")
     temporary.replace(path)
 
 

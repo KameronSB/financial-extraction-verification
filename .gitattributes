@@ -1,0 +1,2 @@
+# The dataset manifest and saved runs identify their inputs by SHA-256.
+*.json text eol=lf

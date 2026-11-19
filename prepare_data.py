@@ -97,14 +97,14 @@ def main() -> None:
         if not examples:
             raise ValueError(f"No examples selected for {split}.")
         output = data_dir / f"{split}.json"
-        output.write_text(json.dumps(examples, ensure_ascii=False, indent=2), encoding="utf-8")
+        output.write_text(json.dumps(examples, ensure_ascii=False, indent=2), encoding="utf-8", newline="\n")
         manifest["splits"][split] = {
             "url": url, "source_sha256": expected_hash, "count": len(examples),
             "prepared_sha256": hashlib.sha256(output.read_bytes()).hexdigest(),
         }
         print(f"{split}: {len(examples)} examples -> {output.name}")
     (data_dir / "manifest.json").write_text(
-        json.dumps(manifest, indent=2), encoding="utf-8"
+        json.dumps(manifest, indent=2), encoding="utf-8", newline="\n"
     )
 
 

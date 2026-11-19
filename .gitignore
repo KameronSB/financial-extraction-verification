@@ -5,3 +5,11 @@
 __pycache__/
 *.pyc
 .DS_Store
+/.vscode/
+
+# Publish the worked example and full split evaluations. Keep trial runs local.
+/results/*.json
+!/results/sample.json
+!/results/*-full.json
+!/results/*-full.summary.json
+/results/local/
