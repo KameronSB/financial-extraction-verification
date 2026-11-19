@@ -1,6 +1,6 @@
 # Financial table extraction and verification
 
-How much can you trust a financial figure when a language model cites the table cell it came from? The extractor asks GPT-6 Luna to select a source cell. Python copies the reported value, looks for unit evidence in the table and its captions, and sends unresolved cases to review. The repository includes the original model outputs and an offline comparison using the same cell choices.
+How much can you trust a financial figure when a language model cites the table cell it came from? The extractor asks GPT-6 Luna to select a source cell. Python copies the reported value, looks for unit evidence in the table and its captions, and sends unresolved cases to review. The repository includes the original model outputs, an offline replay of their cell choices, and a fresh end-to-end test run.
 
 ## Results
 
@@ -14,10 +14,13 @@ The replay uses the original cell selections on all 444 questions. It applies th
 | Development replay | 206/233 (88.4%) | 214/233 (91.8%) | 206/214 (96.3%) | 8 |
 | Test baseline | 194/211 (91.9%) | 208/211 (98.6%) | 194/208 (93.3%) | 14 |
 | Test replay | 164/211 (77.7%) | 173/211 (82.0%) | 163/173 (94.2%) | 10 |
+| Test live, revised selector | 165/211 (78.2%) | 174/211 (82.5%) | 164/174 (94.3%) | 10 |
+
+The revised selector returned valid responses on all 211 fresh test requests. The reported number matched the reference on 205 questions (97.2%). Of the 37 cases sent to review, 34 lacked a resolved unit, two cited a year heading that needed review, and one was an abstention. The live selector recovered the 2017 current state income-tax provision of 3 million, adding one strict match over replay. [Full live run](results/test-cell-selection-full.json) · [Live test summary](results/test-cell-selection-full.summary.json)
 
 On test, the replay improved reference agreement among accepted answers by 0.9 percentage points. It sent 38 answers to review, including 30 that the original run had accepted and scored correctly. Of the 38, 34 had unresolved units, one selected a year heading requiring review, and three had already failed the baseline checks. One reviewed answer still matched the reference. Numeric-only agreement was 204/211 in both runs. This trade-off matters if every question needs an automatic answer. [Test replay details](results/test-full.replay.summary.json)
 
-A fresh live run exercised the new cell-ID prompt on the first ten development questions. All ten selections matched the reference number. Seven had a supported scale and matched the full reference. Three went to review for missing unit evidence. The full-split figures above measure post-processing with the original selections. [Live run](results/dev-cell-selection-10.json) · [Live summary](results/dev-cell-selection-10.summary.json)
+On the first ten development questions, all ten live selections matched the reference number. Seven had a supported scale and matched the full reference. Three went to review for missing unit evidence. [Development run](results/dev-cell-selection-10.json) · [Development summary](results/dev-cell-selection-10.summary.json)
 
 The development audit covers 13 deliberately selected cases, including reference disagreements, a missing scale, and mixed-unit headings. The baseline accepted all 13, with source support for both the cell and scale in eight. The replay accepted all 12 source-supported answers and sent the remaining case to review. It also flagged both deliberately substituted cells with the same number but the wrong year or metric. This diagnostic sample tests known failure modes. [Review annotations](data/dev-evidence.json) · [Audit results](results/dev-full.audit.json)
 
@@ -36,6 +39,7 @@ From the repository root, run these commands with Python 3.12 (on Windows, use `
 ```sh
 python3 evaluate.py results/test-full.json
 python3 evaluate.py results/dev-full.json
+python3 evaluate.py results/test-cell-selection-full.json
 ```
 
 Replay the revised processing on the saved selections and run the development evidence audit with the standard library.
