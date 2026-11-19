@@ -1,0 +1,89 @@
+{
+  "format_version": 1,
+  "model": "gpt-6-luna",
+  "split": "dev",
+  "started_at": "2026-11-19T16:24:35.867582+00:00",
+  "selected_count": 1,
+  "completed": true,
+  "dataset_sha256": "34818e3c22526cd31f2c190ccd50bc914051ebd98a59baaa99d4f2c0e64c1d49",
+  "prompt_sha256": "0e376b43e71c3824f64819d64f3f750d04517d70dfdc3368ab9fd58d3f87e6d1",
+  "settings": {
+    "reasoning_effort": "none",
+    "max_output_tokens": 2000
+  },
+  "records": [
+    {
+      "id": "4960801d-277d-4f79-8eca-c4d0200fa9d6",
+      "context_id": "3ffd9053-a45d-491c-957a-1b2fa0af0570",
+      "question": "What is the amount of total sales in 2019?",
+      "table": [
+        [
+          "",
+          "",
+          "Years Ended September 30,",
+          ""
+        ],
+        [
+          "",
+          "2019",
+          "2018",
+          "2017"
+        ],
+        [
+          "Fixed Price",
+          "$  1,452.4",
+          "$  1,146.2",
+          "$  1,036.9"
+        ],
+        [
+          "Other",
+          "44.1",
+          "56.7",
+          "70.8"
+        ],
+        [
+          "Total sales",
+          "$1,496.5",
+          "$1,202.9",
+          "$1,107.7"
+        ]
+      ],
+      "paragraphs": [
+        {
+          "order": 1,
+          "text": "Sales by Contract Type: Substantially all of our contracts are fixed-price type contracts. Sales included in Other contract types represent cost plus and time and material type contracts."
+        },
+        {
+          "order": 2,
+          "text": "On a fixed-price type contract, we agree to perform the contractual statement of work for a predetermined sales price. On a cost-plus type contract, we are paid our allowable incurred costs plus a profit which can be fixed or variable depending on the contract’s fee arrangement up to predetermined funding levels determined by the customer. On a time-and-material type contract, we are paid on the basis of direct labor hours expended at specified fixed-price hourly rates (that include wages, overhead, allowable general and administrative expenses and profit) and materials at cost. The table below presents total net sales disaggregated by contract type (in millions):"
+        }
+      ],
+      "gold": {
+        "value": "1496.5",
+        "scale": "million"
+      },
+      "outcome": "ok",
+      "prediction": {
+        "status": "found",
+        "value": "$1,496.5",
+        "scale": "million",
+        "row": 4,
+        "column": 1
+      },
+      "error": null,
+      "verification": {
+        "passed": true,
+        "reasons": [],
+        "cell": "$1,496.5",
+        "normalised_value": "1496500000.0"
+      },
+      "usage": {
+        "input_tokens": 849,
+        "output_tokens": 33
+      },
+      "usage_known": true,
+      "response_model": "gpt-6-luna",
+      "elapsed_seconds": 4.2385
+    }
+  ]
+}
