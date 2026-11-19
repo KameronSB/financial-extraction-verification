@@ -1,0 +1,1874 @@
+{
+  "replay_format_version": 1,
+  "processing_version": 1,
+  "source_run": "test-full.json",
+  "source_run_sha256": "0da26045fda98ad302a018b8e09b77fec527115dc5a967b4ff5599bd8809697c",
+  "model": "gpt-6-luna",
+  "split": "test",
+  "dataset_sha256": "418d1b5ffc6b2baac817bb36d6aec1d2f4d1adfeba0ab75d83693f71256ad4d8",
+  "prompt_sha256": "0e376b43e71c3824f64819d64f3f750d04517d70dfdc3368ab9fd58d3f87e6d1",
+  "completed": true,
+  "planned_count": 211,
+  "processed_count": 211,
+  "unprocessed": 0,
+  "completion_rate": 1.0,
+  "successful_responses": 211,
+  "api_errors": 0,
+  "invalid_outputs": 0,
+  "not_found": 2,
+  "baseline": {
+    "numeric_correct_answers": 204,
+    "strict_correct_answers": 194,
+    "numeric_accuracy_over_processed": 0.966824644549763,
+    "strict_accuracy_over_processed": 0.919431279620853,
+    "numeric_accuracy_over_planned": 0.966824644549763,
+    "strict_accuracy_over_planned": 0.919431279620853,
+    "accepted_answers": 208,
+    "flagged_for_review": 3,
+    "coverage_over_processed": 0.985781990521327,
+    "coverage_over_planned": 0.985781990521327,
+    "correct_accepted_answers": 194,
+    "accepted_errors": 14,
+    "accepted_accuracy": 0.9326923076923077,
+    "accepted_error_rate": 0.0673076923076923
+  },
+  "replay": {
+    "numeric_correct_answers": 204,
+    "strict_correct_answers": 164,
+    "numeric_accuracy_over_processed": 0.966824644549763,
+    "strict_accuracy_over_processed": 0.7772511848341233,
+    "numeric_accuracy_over_planned": 0.966824644549763,
+    "strict_accuracy_over_planned": 0.7772511848341233,
+    "accepted_answers": 173,
+    "flagged_for_review": 38,
+    "coverage_over_processed": 0.8199052132701422,
+    "coverage_over_planned": 0.8199052132701422,
+    "correct_accepted_answers": 163,
+    "accepted_errors": 10,
+    "accepted_accuracy": 0.9421965317919075,
+    "accepted_error_rate": 0.057803468208092484
+  },
+  "delta": {
+    "numeric_correct_answers": 0,
+    "strict_correct_answers": -30,
+    "numeric_accuracy_over_processed": 0.0,
+    "strict_accuracy_over_processed": -0.14218009478672977,
+    "numeric_accuracy_over_planned": 0.0,
+    "strict_accuracy_over_planned": -0.14218009478672977,
+    "accepted_answers": -35,
+    "flagged_for_review": 35,
+    "coverage_over_processed": -0.16587677725118477,
+    "coverage_over_planned": -0.16587677725118477,
+    "correct_accepted_answers": -31,
+    "accepted_errors": -4,
+    "accepted_accuracy": 0.009504224099599834,
+    "accepted_error_rate": -0.00950422409959982
+  },
+  "cases": [
+    {
+      "id": "107efaa11617ac41f5f9b3b5adf1e98c",
+      "gold": {
+        "value": "948578",
+        "scale": ""
+      },
+      "row": null,
+      "column": null,
+      "claimed_value": null,
+      "source_value": null,
+      "baseline": {
+        "status": "not_found",
+        "scale": "",
+        "numeric_correct": false,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "model_did_not_find_an_answer"
+        ]
+      },
+      "replay": {
+        "status": "not_found",
+        "scale": "",
+        "numeric_correct": false,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "model_did_not_find_an_answer"
+        ]
+      }
+    },
+    {
+      "id": "a81efaae1f1dad5df753e99f22fa6e21",
+      "gold": {
+        "value": "1000000",
+        "scale": ""
+      },
+      "row": 2,
+      "column": 1,
+      "claimed_value": "1,000,000",
+      "source_value": "1,000,000",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "d3916f1eb990b4f3086630052d8d8216",
+      "gold": {
+        "value": "4055",
+        "scale": ""
+      },
+      "row": 4,
+      "column": 2,
+      "claimed_value": "$4,055",
+      "source_value": "$4,055",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "c4f432b6a82fc554d747683f1631b2f7",
+      "gold": {
+        "value": "88",
+        "scale": ""
+      },
+      "row": 6,
+      "column": 2,
+      "claimed_value": "$88",
+      "source_value": "$88",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "8bdf0f0c7b8aa3fa4900237d69724073",
+      "gold": {
+        "value": "-33",
+        "scale": "million"
+      },
+      "row": 1,
+      "column": 3,
+      "claimed_value": "(33)",
+      "source_value": "(33)",
+      "baseline": {
+        "status": "found",
+        "scale": "million",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "cae49496d2fc55436a2bb9d00df5dcec",
+      "gold": {
+        "value": "551214",
+        "scale": ""
+      },
+      "row": 2,
+      "column": 1,
+      "claimed_value": "551,214",
+      "source_value": "551,214",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "720e234d5d8c898464ab864a2f524fff",
+      "gold": {
+        "value": "182228",
+        "scale": "million"
+      },
+      "row": 3,
+      "column": 3,
+      "claimed_value": "$182,228",
+      "source_value": "$182,228",
+      "baseline": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "unit": {
+        "status": "resolved",
+        "scale": "thousand",
+        "unit": null,
+        "evidence": [
+          {
+            "source": "paragraph",
+            "paragraph_order": 2,
+            "text": "amounts in thousands, except percentages"
+          }
+        ],
+        "multiplier": "1000"
+      }
+    },
+    {
+      "id": "4cac8704d20d5c746d09258b90c49b09",
+      "gold": {
+        "value": "66128",
+        "scale": "thousand"
+      },
+      "row": 2,
+      "column": 1,
+      "claimed_value": "83,692",
+      "source_value": "83,692",
+      "baseline": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": false,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": false,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "unit": {
+        "status": "resolved",
+        "scale": "thousand",
+        "unit": "dollar",
+        "evidence": [
+          {
+            "source": "column_heading",
+            "row": 1,
+            "column": 1,
+            "text": "$'000"
+          }
+        ],
+        "multiplier": "1000"
+      }
+    },
+    {
+      "id": "30612829687bff7672928a44b5984a1b",
+      "gold": {
+        "value": "4.3",
+        "scale": "percent"
+      },
+      "row": 4,
+      "column": 1,
+      "claimed_value": "4.4%",
+      "source_value": "4.4%",
+      "baseline": {
+        "status": "found",
+        "scale": "percent",
+        "numeric_correct": false,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": "percent",
+        "numeric_correct": false,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "unit": {
+        "status": "resolved",
+        "scale": "percent",
+        "unit": "percent",
+        "evidence": [
+          {
+            "source": "cell",
+            "row": 4,
+            "column": 1,
+            "text": "4.4%"
+          }
+        ],
+        "multiplier": "0.01"
+      }
+    },
+    {
+      "id": "2fed773590cac936ba03262eedeadff6",
+      "gold": {
+        "value": "163047",
+        "scale": ""
+      },
+      "row": 2,
+      "column": 1,
+      "claimed_value": "163,047",
+      "source_value": "163,047",
+      "baseline": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "unit": {
+        "status": "resolved",
+        "scale": "thousand",
+        "unit": "dollar",
+        "evidence": [
+          {
+            "source": "paragraph",
+            "paragraph_order": 1,
+            "text": "dollars in thousands"
+          }
+        ],
+        "multiplier": "1000"
+      }
+    },
+    {
+      "id": "b6c20dd99217f7b378b036e06a9104dd",
+      "gold": {
+        "value": "54.2",
+        "scale": "million"
+      },
+      "row": 10,
+      "column": 2,
+      "claimed_value": "54.2",
+      "source_value": "54.2",
+      "baseline": {
+        "status": "found",
+        "scale": "million",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "6a1de13065d80faa2583a07a489a1e2b",
+      "gold": {
+        "value": "712.1",
+        "scale": "million"
+      },
+      "row": 2,
+      "column": 3,
+      "claimed_value": "$712.1",
+      "source_value": "$712.1",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "6d013bccee58f84baaba0c4db185638b",
+      "gold": {
+        "value": "-19.2",
+        "scale": ""
+      },
+      "row": 2,
+      "column": 4,
+      "claimed_value": "(19.2)",
+      "source_value": "(19.2)",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "04f084b9665a36a3ccea9dfe47fcad18",
+      "gold": {
+        "value": "-10.1",
+        "scale": ""
+      },
+      "row": 5,
+      "column": 2,
+      "claimed_value": "$(10.1)",
+      "source_value": "$(10.1)",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "faf9f137376dc08ac692f904c7ab012d",
+      "gold": {
+        "value": "8153",
+        "scale": ""
+      },
+      "row": 1,
+      "column": 3,
+      "claimed_value": "$8,153",
+      "source_value": "$8,153",
+      "baseline": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "37eb33f99dd4468b951d2467ae5bb2ab",
+      "gold": {
+        "value": "83.14",
+        "scale": ""
+      },
+      "row": 2,
+      "column": 1,
+      "claimed_value": "$ 83.14",
+      "source_value": "$ 83.14",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "e71b376c3a02d9ba8c967a19255f4bb7",
+      "gold": {
+        "value": "43.24",
+        "scale": ""
+      },
+      "row": 4,
+      "column": 4,
+      "claimed_value": "$ 43.24",
+      "source_value": "$ 43.24",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "9aa04f2968dfabe3144285c4bf9277f9",
+      "gold": {
+        "value": "12.72",
+        "scale": ""
+      },
+      "row": 3,
+      "column": 2,
+      "claimed_value": "$12.72",
+      "source_value": "$12.72",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": "million",
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "unit": {
+        "status": "resolved",
+        "scale": "million",
+        "unit": null,
+        "evidence": [
+          {
+            "source": "paragraph",
+            "paragraph_order": 2,
+            "text": "tables in millions, except per share amounts"
+          }
+        ],
+        "multiplier": "1000000"
+      }
+    },
+    {
+      "id": "038a964e23cf10c98d6fbfb5cdbe9106",
+      "gold": {
+        "value": "-35.8",
+        "scale": "million"
+      },
+      "row": 5,
+      "column": 1,
+      "claimed_value": "(35.8)",
+      "source_value": "(35.8)",
+      "baseline": {
+        "status": "found",
+        "scale": "million",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "01b08155e7ac7669ff4b7268a48733b8",
+      "gold": {
+        "value": "195956",
+        "scale": ""
+      },
+      "row": 2,
+      "column": 1,
+      "claimed_value": "$195,956",
+      "source_value": "$195,956",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "0e6b1ba71167b96cdd00504b024f4f74",
+      "gold": {
+        "value": "35719",
+        "scale": ""
+      },
+      "row": 8,
+      "column": 1,
+      "claimed_value": "$35,719",
+      "source_value": "$35,719",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "c447c5ff9ca6cfb0b23f273af3ac9a27",
+      "gold": {
+        "value": "-59.9",
+        "scale": "percent"
+      },
+      "row": 8,
+      "column": 3,
+      "claimed_value": "(59.9)",
+      "source_value": "(59.9)",
+      "baseline": {
+        "status": "found",
+        "scale": "percent",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "4c76b32b0cbd412cb80e188a064343dc",
+      "gold": {
+        "value": "2017",
+        "scale": ""
+      },
+      "row": 6,
+      "column": 1,
+      "claimed_value": "2019",
+      "source_value": "2014",
+      "baseline": {
+        "status": "found",
+        "scale": "million",
+        "numeric_correct": false,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "value_does_not_match_cited_cell"
+        ]
+      },
+      "replay": {
+        "status": "found",
+        "scale": "million",
+        "numeric_correct": false,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "value_does_not_match_cited_cell"
+        ]
+      }
+    },
+    {
+      "id": "6752ec0c4b39a73c65f4b16ca9ff6321",
+      "gold": {
+        "value": "51",
+        "scale": "million"
+      },
+      "row": 3,
+      "column": 2,
+      "claimed_value": "51",
+      "source_value": "51",
+      "baseline": {
+        "status": "found",
+        "scale": "million",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "111b68edd8ef78f03eb90f93a7e1fbcb",
+      "gold": {
+        "value": "81945",
+        "scale": ""
+      },
+      "row": 4,
+      "column": 4,
+      "claimed_value": "$81,945",
+      "source_value": "$81,945",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "88ad3ad09c49794a4f9eb1e793dddb79",
+      "gold": {
+        "value": "14918",
+        "scale": ""
+      },
+      "row": 7,
+      "column": 4,
+      "claimed_value": "$14,918",
+      "source_value": "$14,918",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "06724e67d9a699cd29d3b626cebb0428",
+      "gold": {
+        "value": "4.80",
+        "scale": ""
+      },
+      "row": 3,
+      "column": 1,
+      "claimed_value": "4.80",
+      "source_value": "4.80",
+      "baseline": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "f0e203decf37e241c97d8541ca4b24ea",
+      "gold": {
+        "value": "3.00",
+        "scale": ""
+      },
+      "row": 4,
+      "column": 1,
+      "claimed_value": "3.00",
+      "source_value": "3.00",
+      "baseline": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "469d98ce33076fd2f2c7edb96cead1ba",
+      "gold": {
+        "value": "7.50",
+        "scale": ""
+      },
+      "row": 7,
+      "column": 1,
+      "claimed_value": "7.50",
+      "source_value": "7.50",
+      "baseline": {
+        "status": "found",
+        "scale": "million",
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "0009bd87a55c3494b46c041853bd6f10",
+      "gold": {
+        "value": "1128447",
+        "scale": ""
+      },
+      "row": 9,
+      "column": 2,
+      "claimed_value": "$1,128,447",
+      "source_value": "$1,128,447",
+      "baseline": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "unit": {
+        "status": "resolved",
+        "scale": "thousand",
+        "unit": null,
+        "evidence": [
+          {
+            "source": "paragraph",
+            "paragraph_order": 1,
+            "text": "in thousands"
+          }
+        ],
+        "multiplier": "1000"
+      }
+    },
+    {
+      "id": "4653e3775af2c70c79d8fbd2843698f5",
+      "gold": {
+        "value": "91.8",
+        "scale": "percent"
+      },
+      "row": 8,
+      "column": 1,
+      "claimed_value": "91.8",
+      "source_value": "91.8",
+      "baseline": {
+        "status": "found",
+        "scale": "percent",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "1b58f06f8a7c6f8e8b5089f84750faed",
+      "gold": {
+        "value": "2019",
+        "scale": ""
+      },
+      "row": 1,
+      "column": 1,
+      "claimed_value": "2019",
+      "source_value": "2019",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": false,
+        "review_reasons": [
+          "header_year_requires_review"
+        ]
+      },
+      "unit": {
+        "status": "resolved",
+        "scale": "",
+        "unit": "year",
+        "multiplier": "1",
+        "evidence": [
+          {
+            "source": "column_heading",
+            "row": 1,
+            "column": 1,
+            "text": "2019"
+          }
+        ]
+      }
+    },
+    {
+      "id": "0da0725730c50280b9d0e53c18af4225",
+      "gold": {
+        "value": "0",
+        "scale": "thousand"
+      },
+      "row": 2,
+      "column": 1,
+      "claimed_value": "$ 0",
+      "source_value": "$ 0",
+      "baseline": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "a40ba4ccd2dec9346487e3670e093347",
+      "gold": {
+        "value": "500471",
+        "scale": "thousand"
+      },
+      "row": 3,
+      "column": 2,
+      "claimed_value": "500,471",
+      "source_value": "500,471",
+      "baseline": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "a26fe888a673a5d1d6f4d5f8c13aab32",
+      "gold": {
+        "value": "201799",
+        "scale": ""
+      },
+      "row": 3,
+      "column": 3,
+      "claimed_value": "201,799",
+      "source_value": "201,799",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "c08dd44a41a6f9d974e98bd1c81b067a",
+      "gold": {
+        "value": "76384",
+        "scale": ""
+      },
+      "row": 4,
+      "column": 1,
+      "claimed_value": "76,384",
+      "source_value": "76,384",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "eaa072997ece2f2ead3b10656816135a",
+      "gold": {
+        "value": "-342100",
+        "scale": ""
+      },
+      "row": 3,
+      "column": 2,
+      "claimed_value": "(342,100)",
+      "source_value": "(342,100)",
+      "baseline": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "unit": {
+        "status": "resolved",
+        "scale": "thousand",
+        "unit": null,
+        "evidence": [
+          {
+            "source": "paragraph",
+            "paragraph_order": 1,
+            "text": "in thousands, except for share and per share data"
+          }
+        ],
+        "multiplier": "1000"
+      }
+    },
+    {
+      "id": "2642dd42d14315d3ab62a4a1754d0bad",
+      "gold": {
+        "value": "142449",
+        "scale": ""
+      },
+      "row": 4,
+      "column": 1,
+      "claimed_value": "142,449",
+      "source_value": "142,449",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "unit": {
+        "status": "resolved",
+        "scale": "thousand",
+        "unit": null,
+        "evidence": [
+          {
+            "source": "paragraph",
+            "paragraph_order": 1,
+            "text": "in thousands, except for share and per share data"
+          }
+        ],
+        "multiplier": "1000"
+      }
+    },
+    {
+      "id": "750000bcbbf4667885844d6de9b64c04",
+      "gold": {
+        "value": "23406",
+        "scale": ""
+      },
+      "row": 1,
+      "column": 1,
+      "claimed_value": "$23,406",
+      "source_value": "$23,406",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "acf3ab9282816433a536f8b3575c6d48",
+      "gold": {
+        "value": "3",
+        "scale": "million"
+      },
+      "row": null,
+      "column": null,
+      "claimed_value": null,
+      "source_value": null,
+      "baseline": {
+        "status": "not_found",
+        "scale": "",
+        "numeric_correct": false,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "model_did_not_find_an_answer"
+        ]
+      },
+      "replay": {
+        "status": "not_found",
+        "scale": "",
+        "numeric_correct": false,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "model_did_not_find_an_answer"
+        ]
+      }
+    },
+    {
+      "id": "1b7436649beee022312bcaca2bf518b3",
+      "gold": {
+        "value": "547949",
+        "scale": ""
+      },
+      "row": 1,
+      "column": 1,
+      "claimed_value": "547,949",
+      "source_value": "547,949",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "bc730843182e1cf28f723fb79dbb4dad",
+      "gold": {
+        "value": "772303",
+        "scale": ""
+      },
+      "row": 2,
+      "column": 2,
+      "claimed_value": "772,303",
+      "source_value": "772,303",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "9dfa7018eae65bf2917063da6c671668",
+      "gold": {
+        "value": "32.8",
+        "scale": "percent"
+      },
+      "row": 3,
+      "column": 3,
+      "claimed_value": "36.4",
+      "source_value": "36.4",
+      "baseline": {
+        "status": "found",
+        "scale": "percent",
+        "numeric_correct": false,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": "percent",
+        "numeric_correct": false,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "unit": {
+        "status": "resolved",
+        "scale": "percent",
+        "unit": "percent",
+        "evidence": [
+          {
+            "source": "column_heading",
+            "row": 2,
+            "column": 3,
+            "text": "%"
+          }
+        ],
+        "multiplier": "0.01"
+      }
+    },
+    {
+      "id": "ef1486b4e5a424101410223bc9e23053",
+      "gold": {
+        "value": "130284942",
+        "scale": ""
+      },
+      "row": 4,
+      "column": 4,
+      "claimed_value": "125,635",
+      "source_value": "125,635",
+      "baseline": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": false,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": "thousand",
+        "numeric_correct": false,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "unit": {
+        "status": "resolved",
+        "scale": "thousand",
+        "unit": "dollar",
+        "evidence": [
+          {
+            "source": "column_heading",
+            "row": 1,
+            "column": 4,
+            "text": "$\u2019000"
+          }
+        ],
+        "multiplier": "1000"
+      }
+    },
+    {
+      "id": "b93936a727c1fe3880e34bd22f6000d7",
+      "gold": {
+        "value": "672",
+        "scale": "million"
+      },
+      "row": 1,
+      "column": 1,
+      "claimed_value": "$672",
+      "source_value": "$672",
+      "baseline": {
+        "status": "found",
+        "scale": "million",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "0e8a0685514572ed0cc38cc0cfc79fbc",
+      "gold": {
+        "value": "-31",
+        "scale": "million"
+      },
+      "row": 3,
+      "column": 3,
+      "claimed_value": "(31)",
+      "source_value": "(31)",
+      "baseline": {
+        "status": "found",
+        "scale": "million",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "8e48d9ab4eb20060ce56e28527ac72de",
+      "gold": {
+        "value": "814",
+        "scale": "million"
+      },
+      "row": 5,
+      "column": 5,
+      "claimed_value": "814",
+      "source_value": "814",
+      "baseline": {
+        "status": "found",
+        "scale": "million",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    },
+    {
+      "id": "ec1db5c1a5967c9e5a571017ee508fad",
+      "gold": {
+        "value": "2.55",
+        "scale": ""
+      },
+      "row": 5,
+      "column": 2,
+      "claimed_value": "$2.55",
+      "source_value": "$2.55",
+      "baseline": {
+        "status": "found",
+        "scale": "million",
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "unit": {
+        "status": "resolved",
+        "scale": "",
+        "unit": "per share",
+        "evidence": [
+          {
+            "source": "section_heading",
+            "row": 4,
+            "column": 0,
+            "text": "Pro forma net income per common share amounts:"
+          }
+        ],
+        "multiplier": "1"
+      }
+    },
+    {
+      "id": "85239559504b80773492989196b047d2",
+      "gold": {
+        "value": "6053",
+        "scale": ""
+      },
+      "row": 4,
+      "column": 3,
+      "claimed_value": "6,053",
+      "source_value": "6,053",
+      "baseline": {
+        "status": "found",
+        "scale": "",
+        "numeric_correct": true,
+        "strict_correct": true,
+        "accepted": true,
+        "review_reasons": []
+      },
+      "replay": {
+        "status": "found",
+        "scale": null,
+        "numeric_correct": true,
+        "strict_correct": false,
+        "accepted": false,
+        "review_reasons": [
+          "unresolved_unit"
+        ]
+      },
+      "unit": {
+        "status": "unknown",
+        "scale": null,
+        "unit": null,
+        "evidence": [],
+        "multiplier": null
+      }
+    }
+  ]
+}

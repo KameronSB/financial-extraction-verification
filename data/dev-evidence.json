@@ -1,0 +1,165 @@
+{
+  "split": "dev",
+  "dataset_sha256": "34818e3c22526cd31f2c190ccd50bc914051ebd98a59baaa99d4f2c0e64c1d49",
+  "cases": [
+    {
+      "id": "4960801d-277d-4f79-8eca-c4d0200fa9d6",
+      "cells": [
+        [
+          4,
+          1
+        ]
+      ],
+      "scale": "million",
+      "rationale": "Total sales, 2019. Paragraph 2 introduces the table in millions."
+    },
+    {
+      "id": "66d3e594-1904-4cb1-9af1-bac17a8f273b",
+      "cells": [
+        [
+          5,
+          1
+        ]
+      ],
+      "scale": null,
+      "rationale": "Deferred income tax assets, As reported. The only monetary magnitude stated applies to other assets in footnote 1."
+    },
+    {
+      "id": "4ec6ff4d-d8ef-4cdd-aeab-df75b41f5c01",
+      "cells": [
+        [
+          1,
+          3
+        ]
+      ],
+      "scale": "percent",
+      "rationale": "Order intake, Change (%). The change column overrides the monetary table stub."
+    },
+    {
+      "id": "cf30adbb-c986-4b67-aa14-d0021d7a8f61",
+      "cells": [
+        [
+          2,
+          2
+        ]
+      ],
+      "scale": "thousand",
+      "rationale": "Legal reserve, 2019, in the appropriation-of-earnings group headed in thousand NT dollars."
+    },
+    {
+      "id": "3683a97f-66f4-4450-a978-4322b673b914",
+      "cells": [
+        [
+          5,
+          1
+        ]
+      ],
+      "scale": "",
+      "rationale": "Total gross emissions for FY19. The header explicitly reports tonnes CO2e."
+    },
+    {
+      "id": "69b61533-e155-408f-b189-5bb0ddfbc274",
+      "cells": [
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "scale": "",
+      "rationale": "Both columns are labelled FY18, with different geographic boundaries in the footnote. The question specifies gross emissions but omits geography.",
+      "wrong_cells": [
+        [
+          7,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "04eb80f3-ec41-40c1-8413-9d70059a85ca",
+      "cells": [
+        [
+          13,
+          1
+        ]
+      ],
+      "scale": "",
+      "rationale": "Total in the basic earnings per share (cents per share) section, 2019."
+    },
+    {
+      "id": "4a58213e-066a-4a7e-becc-e9dc85bda06e",
+      "cells": [
+        [
+          5,
+          1
+        ]
+      ],
+      "scale": "thousand",
+      "rationale": "Total cost of revenue, 2019. Paragraph 5 specifies dollars in thousands."
+    },
+    {
+      "id": "4b63994e-6645-4dd6-8132-5c6773cf7362",
+      "cells": [
+        [
+          1,
+          1
+        ]
+      ],
+      "scale": "million",
+      "rationale": "Salaries and fees under the 2019 €m header. All three years contain 4.",
+      "wrong_cells": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "ec066127-4046-4b2f-9332-de14851c6868",
+      "cells": [
+        [
+          5,
+          2
+        ]
+      ],
+      "scale": "",
+      "rationale": "Expected term (in years), fiscal year ended February 1, 2019."
+    },
+    {
+      "id": "6ee9b6d5-71a3-4e79-a4da-edca3620df7c",
+      "cells": [
+        [
+          4,
+          2
+        ]
+      ],
+      "scale": "thousand",
+      "rationale": "Basic weighted average shares, 2018. Paragraph 3 specifies shares in thousands."
+    },
+    {
+      "id": "d730fec2-2d76-4af3-aacb-90684d1c55dd",
+      "cells": [
+        [
+          2,
+          3
+        ]
+      ],
+      "scale": "million",
+      "rationale": "Dividends on preferred stock, 2017. Paragraph 1 specifies tabular amounts in millions. Paragraph 3 changes the unit for share counts."
+    },
+    {
+      "id": "df840c74-8dee-49db-b038-cb399494f9a5",
+      "cells": [
+        [
+          4,
+          1
+        ]
+      ],
+      "scale": "million",
+      "rationale": "Taxation recoverable in the within-one-year section under 2019 and €m."
+    }
+  ]
+}

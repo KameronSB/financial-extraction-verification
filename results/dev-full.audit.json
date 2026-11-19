@@ -1,0 +1,47 @@
+{
+  "run": "dev-full.json",
+  "reviewed_cases": 13,
+  "cases_with_supported_scale": 12,
+  "baseline": {
+    "correct_citations": 13,
+    "correct_citations_and_supported_scale": 8,
+    "accepted": 13,
+    "accepted_with_correct_citation_and_scale": 8,
+    "accepted_with_wrong_or_unsupported_answer": 5,
+    "unresolved_reference_units_sent_to_review_with_correct_cell": 0
+  },
+  "replay": {
+    "correct_citations": 13,
+    "correct_citations_and_supported_scale": 12,
+    "accepted": 12,
+    "accepted_with_correct_citation_and_scale": 12,
+    "accepted_with_wrong_or_unsupported_answer": 0,
+    "unresolved_reference_units_sent_to_review_with_correct_cell": 1
+  },
+  "same_number_wrong_cell_controls": [
+    {
+      "id": "69b61533-e155-408f-b189-5bb0ddfbc274",
+      "wrong_cell": [
+        7,
+        2
+      ],
+      "baseline_passed": true,
+      "replay_passed": false,
+      "reasons": [
+        "selected_cell_metric_conflict"
+      ]
+    },
+    {
+      "id": "4b63994e-6645-4dd6-8132-5c6773cf7362",
+      "wrong_cell": [
+        1,
+        2
+      ],
+      "baseline_passed": true,
+      "replay_passed": false,
+      "reasons": [
+        "selected_cell_period_conflict"
+      ]
+    }
+  ]
+}
