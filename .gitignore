@@ -12,8 +12,4 @@ __pycache__/
 !/results/sample.json
 !/results/*-full.json
 !/results/*-full.summary.json
-!/results/*-full.replay.summary.json
-!/results/dev-full.audit.json
-!/results/dev-cell-selection-10.json
-!/results/dev-cell-selection-10.summary.json
 /results/local/

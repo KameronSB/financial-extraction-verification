@@ -11,8 +11,8 @@ from pathlib import Path
 import openai
 from dotenv import load_dotenv
 
-from extract import MAX_OUTPUT_TOKENS, PROMPT, REASONING_EFFORT, extract
-from verify import PROCESSING_VERSION
+from extract import PROMPT, extract
+from verify import verify
 
 ROOT = Path(__file__).resolve().parent
 
@@ -62,10 +62,8 @@ def main() -> None:
             [["Metric", "2025"], ["Revenue", "12.5"]],
             [{"order": 1, "text": "Amounts are in millions."}],
         )
+        print("API connection and structured output succeeded.")
         print(json.dumps(result, indent=2))
-        if not result["verification"]["passed"]:
-            raise ValueError("API responded, but the smoke example did not pass source verification.")
-        print("API connection, cell selection and source verification succeeded.")
         return
 
     data_path = ROOT / "data" / f"{args.split}.json"
@@ -85,22 +83,20 @@ def main() -> None:
     output.parent.mkdir(parents=True, exist_ok=True)
     result = {
         "format_version": 1, "model": model, "split": args.split,
-        "pipeline": "cell_selection", "processing_version": PROCESSING_VERSION,
         "started_at": datetime.now(timezone.utc).isoformat(),
         "selected_count": len(examples), "completed": False,
         "dataset_sha256": hashlib.sha256(data_bytes).hexdigest(),
         "prompt_sha256": hashlib.sha256(PROMPT.encode()).hexdigest(),
-        "settings": {"reasoning_effort": REASONING_EFFORT, "max_output_tokens": MAX_OUTPUT_TOKENS},
+        "settings": {"reasoning_effort": "none", "max_output_tokens": 2000},
         "records": [],
     }
     save_run(output, result)
 
     for index, example in enumerate(examples, 1):
         record = {
-            **example, "outcome": "ok", "selection": None, "prediction": None, "error": None,
+            **example, "outcome": "ok", "prediction": None, "error": None,
             "verification": {"passed": False, "reasons": [], "cell": None,
-                             "normalised_value": None, "unit": None,
-                             "period": None, "metric": None},
+                             "normalised_value": None},
             "usage": {"input_tokens": 0, "output_tokens": 0},
             "usage_known": False,
         }
@@ -110,6 +106,7 @@ def main() -> None:
             answer = extract(client, model, example["question"],
                              example["table"], example["paragraphs"])
             record.update(answer)
+            record["verification"] = verify(example["table"], answer["prediction"])
         except openai.APIError as error:
             record["outcome"] = "api_error"
             record["error"] = api_error_message(error)
