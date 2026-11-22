@@ -2,7 +2,7 @@
 
 This project uses GPT-6 Luna to answer financial questions from TAT-QA tables and accompanying text. Each answer includes a number, its reporting scale, and the source cell. Python checks that the number agrees with the cited cell. The evaluator then compares the number and scale with the reference answer. [Extraction](extract.py) · [Verification](verify.py) · [Evaluation](evaluate.py)
 
-Write for this repo is found on my [blog here]([https://github.com/NExTplusplus/TAT-QA](https://kameronbains.com/posts/building-a-financial-extraction-system-with-llms-and-python)) 
+Write for this repo is found on my [blog here](https://kameronbains.com/posts/building-a-financial-extraction-system-with-llms-and-python)) 
 
 ## Worked result
 
