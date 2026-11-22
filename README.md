@@ -2,6 +2,8 @@
 
 This project uses GPT-6 Luna to answer financial questions from TAT-QA tables and accompanying text. Each answer includes a number, its reporting scale, and the source cell. Python checks that the number agrees with the cited cell. The evaluator then compares the number and scale with the reference answer. [Extraction](extract.py) · [Verification](verify.py) · [Evaluation](evaluate.py)
 
+Write up on my personal blog is here: https://kameronbains.com/posts/building-a-financial-extraction-system-with-llms-and-python
+
 ## Worked result
 
 For **“What is the amount of total sales in 2019?”**, the model returned **$1,496.5 million**. It selected the “Total sales” row under the 2019 heading, at zero-based row 4, column 1. The cell contains `$1,496.5`, and the table introduction specifies millions. The answer passed verification and matched the reference on both number and scale. [Sample run](results/sample.json) · [Score](results/sample.summary.json)
